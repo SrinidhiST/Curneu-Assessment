@@ -5,11 +5,11 @@ dbdf.head()
 
 dbdf.groupby(dbdf.columns[-1]).hist(figsize = (9,9),color= 'Green')
 import matplotlib.pyplot as plt
-print('Based on Patients who donot diabetes')
+print('Based on Patients without diabetes')
 plt.show()
 
 dbdf.groupby(dbdf.columns[-1]).hist(figsize = (9,9),color= 'red')
-print('Based on Patients who have diabetes')
+print('Based on Patients with diabetes')
 plt.show()
 
 # Finding whether any missing values are present in the data
